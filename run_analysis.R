@@ -61,7 +61,8 @@ library(reshape2)
 df3 <- melt(df2,id=c("subject","activity"))
 df4 <- dcast(df3, subject + activity ~ variable, mean)
 
-# write.table(df4, file="tidydataset.txt", row.name=FALSE)
+df4
+
 
 
 
